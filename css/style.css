@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .body {
+    background-color: #e4e8e5;
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    margin-top: 108px;
+  }
+
+  h1 {
+    font-weight: 100;
+    margin: 0px;
+    padding: 0
+  }
+
+  h2 {
+    font-weight: 600;
+    margin: 0px;
+    padding: 0
+  }
+
+  h5 {
+    font-weight: 400;
+    margin: 0px;
+    padding: 0;
+    font-size: 16px;
+    color: #6e6864;
+   }
+    
+  .header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "raleway", serif;
+    color: #f6e3ac;
+    font-weight: 200 !important;
+    font-size: 24px;
+    width: 80%;
+}
+
+.centrado__anim{
+	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+.foto-titular{
+    width: 100%;
+}
+
+.seccionQuienesSomos{
+    width: 100%;
+    font-family: "Gulzar", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+.seccionQuienesSomos__izquierda {
+    width: 50%;
+  }
+  
+  .seccionQuienesSomos__derecha {
+    width: 50%;
+  }
+  
+  .seccionQuienesSomos__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .seccionQuienesSomos__titular{
+    color: #8d714f;
+    font-size: 26px;
+    line-height: 40px;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Raleway", serif;
+    text-decoration:underline;
+    margin-left: 0rem;
+  }
+  
+  .seccionQuienesSomos__parrafo {
+    color: #333333;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    margin-right: 3rem;
+    margin-left: 0rem;
+  }
+
+  .seccionQuienesSomos__titular2{
+    color: #8d714f;
+    font-size: 26px;
+    line-height: 40px;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    font-family: "Raleway", serif;
+    text-decoration:underline;
+    margin-left: 3rem;
+  }
+  
+  .seccionQuienesSomos__parrafo2{
+    color: #333333;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    margin-right: 0rem;
+    margin-left: 3rem;
+  }
+
+  .seccionNuestrosViñedos{
+    width: 100%;
+    font-family: "Gulzar", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+    background-color: #ded2cb;
+  }
+
+  .seccionBodegas{
+    background-color: #f6eed8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seccionBodegas__logos{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    margin-bottom: 3rem;
+  }
+
+  .seccionBodegas__logos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 200px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    border: #f6e3ac solid 2px;
+    box-shadow: 5px 5px 6px 1px rgba(140,122,81,0.16);
+    -webkit-box-shadow: 5px 5px 6px 1px rgba(140,122,81,0.16);
+    -moz-box-shadow: 5px 5px 6px 1px rgba(140,122,81,0.16);
+    opacity: 90%;
+  }
+
+  .seccionBodegas__logos-container :hover{     
+    transition: all 1s;
+    transform: scale(105%);
+    opacity: 100%;
+  }
+  
+  .seccionBodegas__titulo{
+    color: #221e20;
+    font-size: 26px;
+    line-height: 40px;
+    font-family: "Raleway", serif;
+    text-decoration:underline;
+    text-align: center;
+    margin: 2rem 10rem;
+  }
+
+  .centradoConsorcio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "raleway", serif;
+  }
+
+  .centradoConsorcio__titular{
+    color: #f6e3ac;
+    font-size: 26px;
+    line-height: 40px;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+  .centradoConsorcio__bajada{
+    color: white;
+    line-height: 24px;
+    font-size:20px;
+  }
+
+  .seccionContacto{
+    width: 100%;
+    font-family: "raleway", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  .footer {
+    background-color: #6e6864;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: "raleway", serif;
+    font-size: 12px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  
+  .footer__iconosRedesSociales {
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    opacity: 1;
+  }
+  
+  .footer__iconosRedesSociales :hover {
+    opacity: 0.7;
+    transition: opacity 1s ease-out;
+  }
+
+  .formulario {
+    font-family: "raleway", serif;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .txtConsulta{
+    color: #6e6864;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .destacadosColor{
+    color: #8d714f;
+  }
+
+  .inputsForm{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: "raleway", serif;
+  }
+
+  ::placeholder{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: "raleway", serif;
+  }
+  
+  .boton{
+    color: #f6e3ac;
+    font-family: "raleway", serif;
+    background-color: #6e6864;
+    border: none;
+    padding: 0.5rem;
+    font-size: 12px;
+    width: 100px;
+    margin-left: auto;
+  }
+  .botonCentrado{
+    color: #f6e3ac;
+    font-family: "raleway", serif;
+    background-color: #6e6864;
+    border: none;
+    padding: 0.5rem;
+    font-size: 12px;
+    width: 100px;
+    margin-top: 2rem;
+  }
+
+  input:focus-visible {
+    outline: #8d714f auto 1px;
+  }
+
+   textarea:focus-visible {
+    outline: #8d714f auto 1px;
+  }
+
+  input:focus {
+    color: #8d714f;
+  }
+  
+  .boton:visited {
+    background-color: #4c4b4b;
+    border-color: none;
+  }
+  
+  .boton:hover {
+    color: #6e6864;
+    font-family: "raleway", serif;
+    background-color: #f6e3ac;
+    border-color: none;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .botonCentrado:visited {
+    background-color: #4c4b4b;
+    border-color: none;
+  }
+  
+  .botonCentrado:hover {
+    color: #6e6864;
+    font-family: "raleway", serif;
+    background-color: #f6e3ac;
+    border-color: none;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .bodega{
+    background-color: #333333;
+    background-image: url('../imagenes/bkgBodegas.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: "Raleway", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .bodega__izquierda{
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+  .bodega__derecha{
+    padding: 3rem;
+    margin-right: 5rem;
+  }
+
+  .bodega__derecha-titular{
+    color: #f6e3ac;
+    font-size: 24px;
+    line-height: 40px;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+
+  .bodega__derecha-parrafo{
+    color: white;
+    line-height: 22px;
+    font-size:18px;
+  }
+
+  .destacadosColor2{
+    color: #f6e3ac;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+  /* ----------------------------------- */
+
+  /* Tablet */
+@media screen and (max-width: 1023px) {
+    .centrado{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .seccionQuienesSomos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+    }
+    .seccionQuienesSomos__izquierda {
+        width: 100%;
+      }
+      
+      .seccionQuienesSomos__derecha {
+        width: 100%;
+      }
+    
+    .seccionQuienesSomos__parrafo {
+        margin: 2rem;
+      }
+
+      .seccionQuienesSomos__parrafo2 {
+        margin: 2rem;
+      }
+      .seccionQuienesSomos__titular{
+        color: #8d714f;
+        font-size: 26px;
+        line-height: 40px;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-family: "Raleway", serif;
+        text-decoration:underline;
+        margin-left: 0rem;
+      }
+      .seccionQuienesSomos__titular2{
+        color: #8d714f;
+        font-size: 26px;
+        line-height: 40px;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        font-family: "Raleway", serif;
+        text-decoration:underline;
+        margin-left: 0rem;
+      }
+
+      .seccionNuestrosViñedos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .centradoConsorcio{
+        width: 80%;
+      }
+
+      .centradoConsorcio__titular{
+        font-size: 26px;
+        line-height: 40px;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+      }
+
+      .centradoConsorcio__bajada{
+        color: white;
+        line-height: 20px;
+        font-size: 16px;
+      }
+
+      .seccionBodegas__logos{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 100px 100px;
+        margin-bottom: 3rem;
+      }
+      .bodega__derecha{
+        margin-right: 1rem;
+      }
+}
+
+
+  /* ----------------------------------- */
+
+  /* Movil */
+@media screen and (max-width: 599px) {
+    .seccionQuienesSomos{
+        padding: 1rem;
+    }
+
+      .seccionQuienesSomos__parrafo {
+        margin: 1rem;
+      }
+
+      .seccionNuestrosViñedos{
+        padding: 1rem;
+      }
+
+      .seccionBodegas__titulo{
+        font-size: 20px;
+        line-height: 30px;
+        margin: 2rem;
+      }
+
+      .seccionBodegas__logos{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 250px;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px ; 
+        margin-bottom: 3rem;
+      }
+
+      .centradoConsorcio{
+        width: 80%;
+      }
+      .centradoConsorcio__titular{
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+      }
+      .centradoConsorcio__bajada{
+        color: white;
+        line-height: 20px;
+        font-size: 16px;
+      }
+
+      .seccionContacto{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .seccionQuienesSomos__izquierda{
+        text-align: center;
+      }
+
+      .txtConsulta{
+        margin-top: 3rem;
+      }
+
+      .footer {
+        padding: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+
+      .foto-titular{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .seccionQuienesSomos__titular, .seccionQuienesSomos__titular--centrado {
+        margin: 2rem;
+      }
+
+      .bodega{
+        background-color: #333333;
+        background-image: url('../imagenes/bkgBodegas.jpg');
+        background-repeat: repeat-y;
+        background-size: cover;
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-family: "Raleway", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .bodega__izquierda{
+        background-color: rgb(255, 255, 255, 0.8);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+      }
+    
+      .bodega__derecha{
+        padding: 2rem;
+        margin-right: 0rem;
+      }
+    
+      .bodega__derecha-titular{
+        text-align: center;
+      }
+    
+      .bodega__derecha-parrafo{
+        text-align: center;
+        line-height: 20px;
+        font-size:16px;
+      }
+      
+      .seccionBodegas__logos-container{
+        width: 100%;
+      }
+    
+}
