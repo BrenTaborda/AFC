@@ -49,6 +49,29 @@
     align-items: center;    
   }
 
+  .navSuperior{
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-bottom: -1rem;
+  }
+
+  .navSuperior_rrss{
+    float: left;
+  }
+
+  .navSuperior_idiomas{
+    float: right;
+    padding-left: 0.5rem;
+  }
+  .navSuperior_idiomas-on{
+    margin-left: 0.2rem;
+  }
+
+  .navSuperior_idiomas-off{
+    margin-left: 0.2rem;
+    opacity: 0.5;
+  }
+
   .contenedor{
     position: relative;
     display: inline-block;
@@ -293,11 +316,12 @@
     flex-direction: row;
     width: 95%;
     justify-content: space-between;
+  
   }
 
   .footer__iconosAuspicia{
     display: flex;
-    width: 40%;
+    width: 60%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -550,7 +574,7 @@
       }
 
       .footer__iconosAuspicia{
-        width: 70%;
+        width: 89%;
       }
 }
 
@@ -683,7 +707,7 @@
       }
 
       .footer__iconosAuspicia{
-        width: 95%;
+        width: 98%;
       }
     
 }
