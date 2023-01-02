@@ -173,6 +173,9 @@
     margin-right: 3rem;
     margin-left: 0rem;
   }
+  .seccionQuienesSomos__parrafo a{
+    color: #333333;
+  }
 
   .seccionQuienesSomos__titular2{
     color: #8d714f;
@@ -574,7 +577,7 @@
       }
 
       .footer__iconosAuspicia{
-        width: 89%;
+        width: 95%;
       }
 }
 
@@ -647,8 +650,8 @@
 
       .footer {
         padding: 1rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
       }
 
       .foto-titular{
@@ -707,7 +710,17 @@
       }
 
       .footer__iconosAuspicia{
-        width: 98%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
+
+      .footer__iconosAuspicia img{
+        margin-bottom: 0.5rem;
+      }
+      .footer__iconosAuspicia span{
+        margin-bottom: 0.5rem;
       }
     
 }
